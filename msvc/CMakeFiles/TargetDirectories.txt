@@ -1,0 +1,8 @@
+D:/Development/op3d_active/poco-1.7.5/msvc/CMakeFiles/ALL_BUILD.dir
+D:/Development/op3d_active/poco-1.7.5/msvc/Foundation/CMakeFiles/Foundation.dir
+D:/Development/op3d_active/poco-1.7.5/msvc/JSON/CMakeFiles/JSON.dir
+D:/Development/op3d_active/poco-1.7.5/msvc/Net/CMakeFiles/Net.dir
+D:/Development/op3d_active/poco-1.7.5/msvc/Util/CMakeFiles/Util.dir
+D:/Development/op3d_active/poco-1.7.5/msvc/XML/CMakeFiles/XML.dir
+D:/Development/op3d_active/poco-1.7.5/msvc/CMakeFiles/ZERO_CHECK.dir
+D:/Development/op3d_active/poco-1.7.5/msvc/CMakeFiles/uninstall.dir

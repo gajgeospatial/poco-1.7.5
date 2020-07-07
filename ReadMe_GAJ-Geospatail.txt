@@ -1,0 +1,1 @@
+This project should be installed as POCO_DIR with ProjectTool.
