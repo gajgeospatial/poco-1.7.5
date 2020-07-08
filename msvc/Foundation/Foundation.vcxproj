@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -1474,7 +1474,7 @@
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">Generating pocomsg.h</Message>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating pocomsg.h</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-"C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\MC.Exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
+"$(CUR_WINSDK_BIN)\mc.exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1483,7 +1483,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'">setlocal
-"C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\MC.Exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
+"$(CUR_WINSDK_BIN)\mc.exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1492,7 +1492,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'">setlocal
-"C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\MC.Exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
+"$(CUR_WINSDK_BIN)\mc.exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1501,7 +1501,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">setlocal
-"C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\MC.Exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
+"$(CUR_WINSDK_BIN)\mc.exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1510,7 +1510,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">setlocal
-"C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\MC.Exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
+"$(CUR_WINSDK_BIN)\mc.exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1519,7 +1519,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|Win32'">setlocal
-"C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\MC.Exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
+"$(CUR_WINSDK_BIN)\mc.exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1528,7 +1528,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\MC.Exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
+"$(CUR_WINSDK_BIN)\mc.exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1537,7 +1537,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'">setlocal
-"C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\MC.Exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
+"$(CUR_WINSDK_BIN)\mc.exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1546,7 +1546,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">setlocal
-"C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\MC.Exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
+"$(CUR_WINSDK_BIN)\mc.exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1555,7 +1555,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">setlocal
-"C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\MC.Exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
+"$(CUR_WINSDK_BIN)\mc.exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1564,7 +1564,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">setlocal
-"C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\MC.Exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
+"$(CUR_WINSDK_BIN)\mc.exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1573,7 +1573,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
-"C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\MC.Exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
+"$(CUR_WINSDK_BIN)\mc.exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1630,7 +1630,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">Generating pocomsg.h</Message>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating pocomsg.h</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-"C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\MC.Exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
+"$(CUR_WINSDK_BIN)\mc.exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1639,7 +1639,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'">setlocal
-"C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\MC.Exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
+"$(CUR_WINSDK_BIN)\mc.exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1648,7 +1648,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'">setlocal
-"C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\MC.Exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
+"$(CUR_WINSDK_BIN)\mc.exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1657,7 +1657,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">setlocal
-"C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\MC.Exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
+"$(CUR_WINSDK_BIN)\mc.exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1666,7 +1666,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">setlocal
-"C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\MC.Exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
+"$(CUR_WINSDK_BIN)\mc.exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1675,7 +1675,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|Win32'">setlocal
-"C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\MC.Exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
+"$(CUR_WINSDK_BIN)\mc.exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1684,7 +1684,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\MC.Exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
+"$(CUR_WINSDK_BIN)\mc.exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1693,7 +1693,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'">setlocal
-"C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\MC.Exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
+"$(CUR_WINSDK_BIN)\mc.exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1702,7 +1702,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'">setlocal
-"C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\MC.Exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
+"$(CUR_WINSDK_BIN)\mc.exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1711,7 +1711,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">setlocal
-"C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\MC.Exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
+"$(CUR_WINSDK_BIN)\mc.exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1720,7 +1720,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">setlocal
-"C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\MC.Exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
+"$(CUR_WINSDK_BIN)\mc.exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1729,7 +1729,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
-"C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\MC.Exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
+"$(CUR_WINSDK_BIN)\mc.exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1776,7 +1776,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating pocomsg.h</Message>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating pocomsg.h</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-"C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\MC.Exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
+"$(CUR_WINSDK_BIN)\mc.exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1785,7 +1785,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\MC.Exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
+"$(CUR_WINSDK_BIN)\mc.exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1802,7 +1802,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating pocomsg.h</Message>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating pocomsg.h</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-"C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\MC.Exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
+"$(CUR_WINSDK_BIN)\mc.exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1811,7 +1811,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\MC.Exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
+"$(CUR_WINSDK_BIN)\mc.exe" -h .\ -r .\ ..\..\Foundation\src\pocomsg.mc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
